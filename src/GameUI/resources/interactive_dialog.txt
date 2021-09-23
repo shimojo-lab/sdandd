@@ -1,0 +1,19 @@
+/dialog_bg1.jpg;/dialog_bg2.jpeg;dialog_bg3.jpeg
+question 1
+a; option1
+b; option2
+c; option3
+2a; question 2a
+a; option1
+b; option2
+c; option3
+2b; question 2b
+a; option1
+b; option2
+c; option3
+2c; question 2c
+a; option1
+b; option2
+c; option3
+user_feed_back; this is a feedback to the player as lesson learned
+from the task

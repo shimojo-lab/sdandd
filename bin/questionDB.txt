@@ -1,0 +1,125 @@
+;
+1>yes
+Antivirus software should be frequently updated
+ yes		no 
+;
+2>80
+Which is the well-known port number for the HTTP protocol
+ 23 	110	  80
+;
+3>hash
+Which of the followings are NOT malicious codes?
+ viruses	hash	Trojan Horses	Worms
+;
+4>B
+Which of the following is NOT the proper way to handle spam emails? 
+ A - Ignore spam emails 
+ B - Reply and ask the sender to stop spamming 
+ C - Consider controlling spam emails by using !:! email filtering software 
+ D - Do not forward spam emails
+;
+5>53
+What is the port no of dns ?
+53	23	443
+;
+6>A
+What is the main purpose of a DNS server
+A - DNS servers are used to resolve FQDN hostnames !:! into IP addresses and vice versa.
+B - DNS provide routing information about ip in the network 
+C - DNS servers are used to store user credential 
+D - None of above
+;
+7>yes
+ A Forward Lookup DNS used to resolving Host to IP Addresses 
+ yes 	no
+;
+8>D
+Tools for troubleshooting DNS
+A - DNS Console 
+B - NSLOOKUP
+C - IPCONFIG
+D - All of above
+;
+9>B
+ What is a query? 
+A - Property of a zone, for example SOA
+B - A request made by the DNS client to provide the name server information.
+C - An reply by computer system 
+D - All of above
+;
+10>C
+What is secondary DNS Server?
+A - A server reside in data center used to serve network.
+B - Type of server for to support primary DNS Server
+C - It is backup for primary DNS where it maintains a !:! read only copy of DNS database.
+D - None of above
+;
+11>B
+How to start Apache Web Server ?
+A - restart the server hardware 
+B - service httpd restart
+C - service bind restart
+D - reboot
+;
+12>C
+how to know web server is running 
+A -  Browsing the URL 
+B -  execute command ps -ef | grep httpd 
+C - All of above 
+;
+13>D
+Which of the followings are NOT method of securing Website hosted on Apache Web Server
+A - Implementing SSL
+B - Integrating with WAF (Web Application Firewall) !:!  like ModSecurity, etc.
+C - Using cloud-based security provider
+D - All of above  
+;
+14>C
+Which of the following is an advantage of anomaly detection?
+A - Rules are easy to define.
+B - Custom protocols can be easily analyzed.
+C - The engine can scale as the rule set grows.
+D - Malicious activity that falls within normal !:!   usage patterns is detected.
+;
+15>D
+A false positive can be defined as
+A - an alert that indicates Cybercrime activity on a system that, !:! upon further inspection, turns out to !:!  represent legitimate network traffic or behavior.
+B - an alert that indicates Cybercrime activity on a system that is !:!  not running on the network.
+C - the lack of an alert for Cybercrime activity.
+D - Both A and B.
+;
+16>A
+where is the most productive placement of IDS devices in the network?
+A - Inside the firewall
+B -  Outside the firewall
+C -  Both
+;
+
+17>C 
+What is the purpose of a shadow honeypot? 
+A - To flag attacks against known vulnerabilities.
+B - To help reduce false positives in a signature-based IDS.
+C - To randomly check suspicious traffic identified by !:! an anomaly detection system.
+D - To enhance the accuracy of a traditional honeypot.
+;
+18>B
+At which two traffic layers do most commercial IDSes generate signatures? 
+A - application layer & session layer 
+B -  network layer & transport layer
+C -  session layer & link Layer
+;
+19>B
+When discussing IDS/IPS, what is a signature?
+A - An electronic signature used to authenticate the !:! identity of a user on the network
+B -  Attack-definition file
+C -  It refers to "normal," baseline network behavior
+D -  None of the above
+;
+20>D
+What are the different ways to intrude ?
+A -  Buffer overflows
+B -  Unexpected combinations and unhandled input
+C -  Race conditions
+D -  All of the mentioned
+;
+;

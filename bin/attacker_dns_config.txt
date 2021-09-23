@@ -1,0 +1,23 @@
+named.bot:
+directory /var/named
+primary  com com.zone
+
+com.zone:
+@ IN SOA ns.example.com. root.localhost. (
+		 1; serial
+		 28800 ; refresh
+		 7200 ; retry
+		 604800 ; expire
+		 86400 ; ttl
+         )
+         			I	N NS ns.xxx.example.com.
+example.com.			IN NS ns.xxx.example.com.
+xxx.example.com.		IN NS ns.xxx.example.com.
+						IN NS www.secnet.com.
+ns.xxx.example.com.		IN A  10.1.3.30
+wwww.xxx.example.com.	IN A  10.1.3.55
+www.secnet.com.			IN A  10.1.3.55
+
+
+
+

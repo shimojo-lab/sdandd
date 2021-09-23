@@ -1,0 +1,290 @@
+<?xml version = "1.0"?>
+<rooms>
+		 <room class = "ResorucesRoom">
+		 	<numbero_of_room>30</numbero_of_room>
+            <x>0</x>
+            <y>0</y>
+            <roomID>RS0</roomID>
+            <roomName>Resources Room 1</roomName>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+            <refRoomUI>null</refRoomUI>
+         </room>
+         
+          <room class = "TrapRoom">
+          	<numbero_of_room>20</numbero_of_room>
+            <x>0</x>
+            <y>0</y>
+            <roomID>TRR0</roomID>
+            <roomName>Trap Room 1</roomName>
+            <E_door>false</E_door>
+            <W_door>false</W_door>
+            <N_door>false</N_door>
+            <S_door>false</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+            <refRoomUI>null</refRoomUI>
+         </room>
+         
+       <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR0</roomID>
+            <taskID>wirelessAttack</taskID>
+            <roomName>Wireless Attak Scenario</roomName>
+            <taskDescription> Your mission: Penetrate Wireless Network
+                  Goal : 
+                  To reveal  the wireless network hidden SSID 
+                  and then access to the network by cracking
+                  the wireless password
+                  A successful mission will reveal wireless SSID
+                  and password. 
+                  Necessary tools (cards) :
+                  The player must have the following card to 
+                  complete the mission. They are:  
+                  a. Airmon-ng or airodump-ng   tool 
+                  b. Aireplay-Ng Deauth tool 
+                  c. Aircrack-Ng  tool 
+                  Instruction 
+                  List to do : 
+                  (the order is important):
+                  1. use  Airmon-ng /airodump-ng   tools to capture 
+                  a packet transmitted by the wireless access point  
+                  use Aireplay-Ng Deauth tools to capture the 
+                  de-authentication packet 
+                  3. use Aircrack-Ng  tools to crack password from 
+                  the de-authentication packet captured earlier.</taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room>
+         <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR1</roomID>
+            <taskID>socialMedia</taskID>
+            <roomName>socialMedia</roomName>
+            <taskDescription>
+                  Your mission : Hacking user Socialmedia account
+                  Goal : 
+                  This task, a player uses  social enginering toolkit
+                  and password cracker to obtain user social media
+                  account.
+                  First you task is to unlock  victim's phone 
+                  and use the information in phone contact list
+                  to make socia media friend. Once succesfully 
+                  added freind into your social media contact, 
+                  then use social enginering toolkit (SET) to steal  
+                  victim's account credential.  
+                  Successful mission will reveal victim's social media 
+                  account credential. 
+                  Neccesary tools (cards) : 
+                  Player must have the foolowing card to complete
+                  the mission.They are: 
+                  a. Password Cracker 
+                  b. SET (SET available in Kali linux distro)  
+                   Instruction 
+                  List to do : 
+                  1. find the cell phone in the room 
+                  2. use password cracker card to decode the phone's pin code  
+                   and use the contact list to  establish socialmedia network friend 
+                  3. Launch SET toolkit, to creat a clone of social media targeting
+                   the victim favorite sosmed  
+                  4. convince the victem via chat to click on link with  
+                  clone web trap  prepared  in point 3  
+                  5. Successfull mission obtain victem's account displayed in screen 
+            </taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room>
+         <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR2</roomID>
+            <taskID>networkSecurity</taskID>
+            <roomName>networkSecurity</roomName>
+            <taskDescription> 
+            "Mission : Eavesdropping user information utilising DNS cache poisoning 
+                  Goal : 
+                  inject cache poisoning to the cache server, by changing the legitimate
+                  IP address to attacker IP address 
+                  First you task is build network configuration according to 
+                  the following information: 
+                  1. Cache Server : 10.1.2.20 pointed to the root DNS
+                  2. Root DNS Server with all legitimate NS record 
+                  3. DNS secnet.com : 10.1.4.40  with NS record secnet.com -> 10.1.4.180 
+                  4. DNS attacker : 10.1.3.30 with ns record secnet.com -> 10.1.3.55 and 
+                  xxx.example.com -> 10.1.3.55 
+                  second inject DNS cache poisoning to the cache server 
+                  using dnsspoof to change the legitimate IP address 10.1.4.180 to
+                  to attacker web IP address 10.1.3.55 
+                  Successful mission shown ping to secnet.com will reply an IP address 
+                  of attacker ip address : 10.1.3.55 
+                  Neccesary tools (cards) : 
+                  1. PC for testing 
+                  2. Server for root DNS 
+                  3. Server for victem DNS 
+                  4. Server for attacker DNS 
+                  5. Server for DNS secnet.com 
+                  6. Server for HTTPS secnet.com 
+                  7. Server for attacker HTTPS 
+                  8. dnsspoof tools 
+                   Instruction : 
+                  Following are list player have to do : 
+                  1. Server setup 
+                  2. run the dnsspoof tool 
+                  3. Ping the attacker legitimate web address xxx.example.com.
+                  the attacker DNS will reply legitimate NS record for xxx.example.com 
+                  but also make query request and reply for secnet.com domain  
+                  4. after some time the dns cache poisoning eventually succeed  
+                  5. from PC victim ping secnet.com and verify reply is IP address
+                  of attacker PC ;</taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room> 
+          <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR3</roomID>
+            <taskID>Empty_task</taskID>
+            <roomName>Empty_task</roomName>
+            <taskDescription> 
+            "Mission : to be defined  
+                  Goal : 
+                  to be defined  
+                  Neccesary tools (cards) : 
+                  1.
+                  2.
+                  3.
+                  4.
+                   Instruction : 
+                  Following are list player have to do : 
+                  1.
+                  2.
+                  3.
+                  4.
+                  </taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room> 
+          <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR4</roomID>
+            <taskID>Empty_task2</taskID>
+            <roomName>Empty_task2</roomName>
+            <taskDescription> 
+            "Mission : to be defined  
+                  Goal : 
+                  to be defined  
+                  Neccesary tools (cards) : 
+                  1.
+                  2.
+                  3.
+                  4.
+                   Instruction : 
+                  Following are list player have to do : 
+                  1.
+                  2.
+                  3.
+                  4.
+                  </taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room> 
+          <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR5</roomID>
+            <taskID>Empty_task3</taskID>
+            <roomName>Empty_task3</roomName>
+            <taskDescription> 
+            "Mission : to be defined  
+                  Goal : 
+                  to be defined  
+                  Neccesary tools (cards) : 
+                  1.
+                  2.
+                  3.
+                  4.
+                   Instruction : 
+                  Following are list player have to do : 
+                  1.
+                  2.
+                  3.
+                  4.
+                  </taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room> 
+          <room class = "TaskRoom">
+            <x>0</x>
+            <y>0</y>
+            <roomID>TSR6</roomID>
+            <taskID>Empty_task4</taskID>
+            <roomName>Empty_task4</roomName>
+            <taskDescription> 
+            "Mission : to be defined  
+                  Goal : 
+                  to be defined  
+                  Neccesary tools (cards) : 
+                  1.
+                  2.
+                  3.
+                  4.
+                   Instruction : 
+                  Following are list player have to do : 
+                  1.
+                  2.
+                  3.
+                  4.
+                  </taskDescription>
+            <E_door>true</E_door>
+            <W_door>true</W_door>
+            <N_door>true</N_door>
+            <S_door>true</S_door>
+            <col>GRAY</col>
+            <player>null</player>
+             <imgPath></imgPath>
+            <refRoomUI>null</refRoomUI>
+         </room> 
+</rooms>

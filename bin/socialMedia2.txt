@@ -1,0 +1,22 @@
+;
+set:res>
+192.168.0.18 - - [17/Dec/2017 23:12:58] "GET / HTTP/1.1" 200 -
+
+[*] WE GOT A HIT! Printing the output:
+PARAM: lsd=AVqcJluW
+PARAM: display=
+PARAM: lgndim=eyJ3IjoxNDQwLCJoIjo5MDAs=
+PARAM: lgnrnd=230624_nh8V
+PARAM: lgnjs=1513581180
+POSSIBLE USERNAME 
+FIELD FOUND: email=testuser@gmail.com
+POSSIBLE USERNAME 
+FIELD FOUND: pass=testuser
+POSSIBLE PASSWORD
+FIELD FOUND: pass=testuser
+;
+;
+  
+
+
+

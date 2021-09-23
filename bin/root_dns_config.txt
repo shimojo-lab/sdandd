@@ -1,0 +1,33 @@
+named.conf:
+
+options
+{
+	directory 	"/var/named";
+};
+zone "com"{
+	type master;
+	file "com.zone";
+};
+
+named.ca:
+
+.							3600000		IN NS TEST.ROOT-SERVICE.NET.
+TEST.ROOT-SERVICE.NET.		3600000		IN A 10.1.1.10
+
+com.zone:
+
+$TTL	86400
+@	IN SOA	rootDNS root.localhost. (
+				2		;serial
+				3H		;refresh
+				15M		;retry
+				1W		;expiry
+				1D 		;minimum
+			)
+
+				IN NS rootDNS
+example.com.	IN NS ns.example.com.
+secnet.com.		IN NS ns.secnet.com.
+rootDNS. 		IN A  10.1.1.10
+ns.example.com	IN A  10.1.3.30
+ns.secnet.com.	IN A  10.1.4.40

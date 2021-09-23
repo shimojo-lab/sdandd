@@ -1,0 +1,12 @@
+named.bot:
+directory /var/named
+cache . named.ca
+
+named.ca:
+.                     3600000 IN NS TEST.ROOT-SERVICE.NET
+TEST.ROOT-SERVICE.NET 3600000 IN A 10.1.1.10
+
+
+
+
+

@@ -1,0 +1,45 @@
+;
+1> airmon-ng 
+Interface       Chipset         Driver
+ rausb0          Ralink RT73     rt73
+ wlan0           Broadcom        b43 - [phy0]
+ wifi0           Atheros         madwifi-ng
+ ath0            Atheros         madwifi-ng VAP (parent: wifi0)
+;
+2> airmon-ng stop ath0 
+ Interface       Chipset         Driver
+ wifi0           Atheros         madwifi-ng
+ ath0            Atheros         madwifi-ng VAP (parent: wifi0) (VAP destroyed)
+;
+3> iwconfig
+ lo        no wireless extensions.
+ eth0      no wireless extensions.
+ wifi0     no wireless extensions.
+;
+4> airmon-ng start wifi0 9
+Interface       Chipset         Driver 
+ wifi0           Atheros         madwifi-ng
+ ath0            Atheros         madwifi-ng VAP (parent: wifi0) (monitor mode enabled)
+;
+5> iwconfig
+lo        no wireless extensions.
+ wifi0     no wireless extensions.
+ eth0      no wireless extensions.
+ ath0      IEEE 802.11g  ESSID:""  Nickname:""
+        Mode:Monitor  Frequency:2.452 GHz  Access Point: 00:0F:B5:88:AC:82   
+        Bit Rate:0 kb/s   Tx-Power:18 dBm   Sensitivity=0/3  
+        Retry:off   RTS thr:off   Fragment thr:off
+        Encryption key:off
+        Power Management:off
+        Link Quality=0/94  Signal level=-95 dBm  Noise level=-95 dBm
+        Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+        Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+;
+6> airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w psk ath0
+CH  9 ][ Elapsed: 4 s ][ 2007-03-24 16:58 ][ WPA handshake: 00:14:6C:7E:40:80                                                                                                             
+  BSSID              PWR RXQ  Beacons    #Data, #/s  CH  MB  ENC  CIPHER AUTH ESSID                                                                                                             
+  00:14:6C:7E:40:80   39 100       51      116   14   9  54  WPA2 CCMP   PSK  "Wireless SSID"                                                                                                                                       
+  BSSID              STATION            PWR  Lost  Packets  Probes                                                                                                                                                         
+  00:14:6C:7E:40:80  00:0F:B5:FD:FB:C2   35     0      116  
+;
+

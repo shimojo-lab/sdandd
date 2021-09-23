@@ -1,0 +1,383 @@
+<?xml version = "1.0"?>
+<itemcards>
+	<itemcard class="ResourcesCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>RS0</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc --> 
+	<x>0</x>
+	<y>0</y>
+	<cardID>airMonNG</cardID>
+	<decriptionFunction>
+	The "airmon-ng" script can be used to enable monitor mode on wireless interfaces. 
+	It may also be used to go back from monitor mode to managed mode.
+	Entering the airmon-ng command without parameters will show the interfaces status.
+	Usage: airmon-ng [start|stop] [interface] [channel] or airmon-ng []check|check kill]
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/airmonng.jpg</pathImgForeground>
+	</itemcard>
+	<itemcard class="ResourcesCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>null</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<cardID>AirePlayNG</cardID>
+	<decriptionFunction>
+	The primary function is to generate traffic for 
+	the later use in aircrack-ng for cracking the WEP and WPA-PSK keys
+	type of attacks : 
+	Attack 0: Deauthentication 
+	Attack 1: Fake authentication 
+	Attack 2: Interactive packet replay 
+	Attack 3: Injection test
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/aireplayng.jpg</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="ResourcesCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>null</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<cardID>AireCrackNG</cardID>
+	<decriptionFunction>
+	Aircrack-ng is a network software suite consisting of a detector, 
+	packet sniffer, WEP and WPA/WPA2-PSK cracker and  
+	analysis tool for 802.11 wireless LANs.
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/airecrackng.jpg</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="ResourcesCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>null</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<cardID>Password Cracker</cardID>
+	<decriptionFunction>
+    In cryptanalysis and computer security, password cracking is 
+    the process of recovering passwords from data that have been 
+    stored in or transmitted by a computer system. Time for 
+    password cracking depends on the password strength(combination 
+    of alphanumeric characters), therefore it is recommended to use 
+    strong password and frequently change the password overtime. 
+    The basic type of password cracking method :  
+    Brute Force: Brute-force attack consists of an attacker trying
+     many passwords with the hope of eventually guessing correctly.
+    Dictionary: Dictionary attack is based on trying all the strings
+    in a pre-arranged listing, typically derived from a list of words
+    such as in a dictionary. If a password is a simple word, Dictionary 
+    attack can easily crack the user password.
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/passwordcracker.jpeg</pathImgForeground>
+	</itemcard>
+	
+	
+	<itemcard class="ResourcesCard">
+	<numbero_of_item>7</numbero_of_item>
+	<Room>null</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<cardID>SET</cardID>
+	<decriptionFunction>
+	The Social-Engineer Toolkit (SET) is an open-source penetration
+	testing framework designed for Social-Engineering. SET has a 
+	number of custom attack vectors that allow you to make a believable
+    attack in a fraction of the time.
+	They are:
+	1. Social-Engineering Attacks
+	2. Spear-Phishing Attack Vectors
+	3. Third Party Modules
+	4. Create a Payload and Listener
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/set.jpg</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="InstrusionDetectorCard">
+	<numbero_of_item>10</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<instrusionType>InstrusionDetectorCard</instrusionType>
+	<damageDigitalPoint>10</damageDigitalPoint>
+	<cardID>HoneyPot</cardID>
+	<decriptionFunction>
+	HoneyPot is a computer security mechanism set to detect, 
+	deflect sn attempt of unauthorized user. Generally Honey
+	pot is a dummy serve,  appear to be as valid server for
+	instrusion detection and  prevention. This detection will 
+	increase administrator awareness of network attack
+	Damage point is 10 
+	</decriptionFunction>
+	<digitalPoint>0</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/honeypot.png</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="InstrusionDetectorCard">
+	<numbero_of_item>4</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<instrusionType>InstrusionDetectorCard</instrusionType>
+	<damageDigitalPoint>10</damageDigitalPoint>
+	<cardID>Intrusion Detection System</cardID>
+	<decriptionFunction>
+	software application that monitors a network or systems for malicious activity or policy violations. 
+	Any detected activity or violation is typically reported either to an administrator or collected  
+	centrally using a security information and event management (SIEM) system.
+	Damage point is 10 
+	</decriptionFunction>
+	<digitalPoint>0</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/instrusion.png</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="InstrusionDetectorCard">
+	<numbero_of_item>4</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<instrusionType>InstrusionDetectorCard</instrusionType>
+	<damageDigitalPoint>10</damageDigitalPoint>
+	<cardID>Network anomali observer</cardID>
+	<decriptionFunction>
+	Network anomali observer is a network anomaly detection techniques utilise artificial intelligence, machine learning, 
+	state machine modeling, statistical approaches. The goals is to  increase administrator awareness of network 
+	attack specially to preconfigured server.
+	</decriptionFunction>
+	<digitalPoint>0</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/networkobs.png</pathImgForeground>
+	</itemcard>
+		
+	<itemcard class="MagicPatchCard">
+	<numbero_of_item>11</numbero_of_item>
+	<Room>null</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<magicCardType>potion</magicCardType>
+	<cardID>potion</cardID>
+	<decriptionFunction>
+	Use this card to increase the player life point
+	</decriptionFunction>
+	<digitalPoint>5</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/potion.jpeg</pathImgForeground>
+	</itemcard>
+	
+	
+	<itemcard class="MagicPatchCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<magicCardType>zero</magicCardType>
+	<cardID>Trojan Horses</cardID>
+	<decriptionFunction>
+	A Trojan horse is a program that performs unknown and unwanted functions.
+	It can take one or more of the following forms: 
+	1. : An unauthorized program contained within a legitimate program. 
+    2. : Any program that appears to perform a desirable and necessary function but does something unintended. 
+	</decriptionFunction>
+	<digitalPoint>10</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/trojanhorse.jpeg</pathImgForeground>
+	</itemcard>
+	
+	
+	<itemcard class="MagicPatchCard">
+	<numbero_of_item>2</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<magicCardType>zero</magicCardType>
+	<cardID>Buffer Overflows</cardID>
+	<decriptionFunction>
+	Buffer Overflows1", "A buffer overflow (or overrun) occurs when a program allocates 
+	a specific block length of memory for something, but then attempts to store more data than the block was intended to hold.
+	test buffer offerflow: 
+	1. : Check for improper use of input/output or string functions. 
+	2. : Feed the application large amounts of data and check for abnormal behavior. 
+	</decriptionFunction>
+	<digitalPoint>10</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/buffer.jpeg</pathImgForeground>
+	</itemcard>
+	
+	<itemcard class="MagicPatchCard">
+	<numbero_of_item>7</numbero_of_item>
+	<Room>RS2</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<magicCardType>normal</magicCardType>
+	<cardID>SQL Injection</cardID>
+	<decriptionFunction>
+	SQL injection is an example of a class of injection 
+	exploits that occur when one scripting language is 
+	embedded inside another scripting language.The injection
+	targets the data residing in a database through the 
+	firewall in order to alter the SQL statements and 
+	retrieve data from the database or execute commands. 
+	</decriptionFunction>
+	<digitalPoint>10</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/sql.png</pathImgForeground>
+	</itemcard>
+	
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>9</numbero_of_item>
+	<IPaddress>10.1.2.5</IPaddress>
+	<domainName>localhost</domainName>
+	<Room>RS0</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>PC 10.1.2.5 </cardID>
+	<decriptionFunction>
+	Client machine,  linus or window machine
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/pc.png</pathImgForeground>
+	<fileConfigPath></fileConfigPath>
+	</itemcard>
+	
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.1.10</IPaddress>
+	<domainName>rootDNS</domainName>
+	<Room>RS0</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Root_DNS_10.1.1.10</cardID>
+	<decriptionFunction>
+	The authoritative name servers that serve the DNS root zone,
+	commonly known as the “root servers”, are a network of 
+	hundreds of servers in many countries around the world. 
+	They are configured in the DNS root zone as 13 named authorities.
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath>/root_dns_config.txt</fileConfigPath>
+	</itemcard>
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.2.20</IPaddress>
+	<domainName>victimdns</domainName>
+	<Room>RS1</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Victim_Dns_10.1.2.20</cardID>
+	<decriptionFunction>
+	A DNS server is a computer server that contains a database 
+	of public IP addresses and their associated hostnames, and  
+	in most cases, serves to resolve, or translate, those common 
+	names to IP addresses as requested.
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath>/victim_dns_config.txt</fileConfigPath>
+	</itemcard>
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.3.30</IPaddress>
+	<domainName>ns.example.com</domainName>
+	<Room>RS1</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Attacker_DNS_10.1.3.30</cardID>
+	<decriptionFunction>
+	A DNS server is a computer server that contains a database  
+	of public IP addresses and their associated hostnames, and \n"
+    in most cases, serves to resolve, or translate, those common \n"
+	names to IP addresses as requested. 
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath>/attacker_dns_config.txt</fileConfigPath>
+	</itemcard>
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.4.40</IPaddress>
+	<domainName>ns.secnet.com</domainName>
+	<Room>RS1</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Sec_Net_DNS_10.1.4.40</cardID>
+	<decriptionFunction>
+	A DNS server is a computer server that contains a database  
+	of public IP addresses and their associated hostnames, and \n"
+    in most cases, serves to resolve, or translate, those common \n"
+	names to IP addresses as requested. 
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath></fileConfigPath>
+	</itemcard>
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.4.180</IPaddress>
+	<domainName>secnet.com</domainName>
+	<Room>RS1</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Sec_Net_HTTPS_10.1.4.180 </cardID>
+	<decriptionFunction>
+	HTTPS (HTTP Secure) is an extension of the Hypertext Transfer Protocol (HTTP) 
+	for secure communication over a computer network, and is widely used on the 
+	Internet.[1][2] In HTTPS, the communication protocol is encrypted by Transport 
+	Layer Security (TLS), or formerly, its predecessor, Secure Sockets Layer (SSL). 
+	The protocol is therefore also often referred to as HTTP over TLS,[3] or HTTP over SSL.
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath></fileConfigPath>
+	</itemcard>
+	
+	<itemcard class="NetworkCard">
+	<numbero_of_item>1</numbero_of_item>
+	<IPaddress>10.1.3.55</IPaddress>
+	<domainName>xxx.example.com</domainName>
+	<Room>RS1</Room> <!-- room can be null or contains multiple rooms according to number of item followed by column for example RS1:TRR1 etc -->
+	<x>0</x>
+	<y>0</y>
+	<networkCardType>NetCard</networkCardType>
+	<cardID>Attacker_HTTPS_10.1.3.55 </cardID>
+	<decriptionFunction>
+	HTTPS (HTTP Secure) is an extension of the Hypertext Transfer Protocol (HTTP) 
+	for secure communication over a computer network, and is widely used on the 
+	Internet.[1][2] In HTTPS, the communication protocol is encrypted by Transport 
+	Layer Security (TLS), or formerly, its predecessor, Secure Sockets Layer (SSL). 
+	The protocol is therefore also often referred to as HTTP over TLS,[3] or HTTP over SSL.
+	</decriptionFunction>
+	<digitalPoint>1</digitalPoint>
+	<pathImgBg>/fg.png</pathImgBg>
+	<pathImgForeground>/server.png</pathImgForeground>
+	<fileConfigPath></fileConfigPath>
+	</itemcard>
+</itemcards>
